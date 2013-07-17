@@ -1,0 +1,20 @@
+<h2>New Important Date</h2>
+<%= form_for(@important_date) do |f| %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :date_of_importance %><br />
+    <%= f.date_select :date_of_importance, :start_year => Date.today.year - 100 %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :importance %><br />
+    <%= f.text_field :importance %>
+  </p>
+  <%= f.submit %>
+<% end %>

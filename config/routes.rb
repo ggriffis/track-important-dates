@@ -1,4 +1,6 @@
 TrackImportantDates::Application.routes.draw do
+  root :to => "important_dates#index"
+  resources :important_dates
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

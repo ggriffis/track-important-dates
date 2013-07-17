@@ -24,9 +24,11 @@ gem 'jquery-rails'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.11'
+  gem 'pry-rails'
 end
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'simplecov', :require => false
 end
 
 # To use ActiveModel has_secure_password
